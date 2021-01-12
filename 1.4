@@ -1,0 +1,79 @@
+
+Meet
+Cuộc họp mới
+Tham gia cuộc họp
+Hangouts
+
+6 trong tổng số 243
+bài tập C
+Hộp thư đến
+
+Huy Nguyễn <babicoolhp@gmail.com>
+Tệp đính kèm
+10:57, 29 thg 12, 2020
+tới tôi
+
+
+41 tệp đính kèm
+
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main()
+{
+ char weather;
+ char activities;
+ printf("What is the weather like?\n");
+ printf("Sunny=1\n");
+ printf("Windy=2\n");
+ printf("Rainy=3\n");
+ printf("Snowy=4\n");
+ scanf("%d", &weather);
+ 
+ if(weather==1) /*Sunny*/
+ {
+  printf("What activities do you want to do?\n");
+  printf("Go to the beach=1\n");
+  printf("Play sports=2\n");
+  scanf("%d", &activities);
+  printf("You should wear:\n");
+  if(activities==1) {printf("Swim suit\n");}
+  if(activities==2) {printf("Sport uniform\n");}
+ }
+ 
+  if(weather==2) /*Windy*/
+ {
+  printf("What activities do you want to do?\n");
+  printf("Fly kites=1\n");
+  printf("Go camping=2\n");
+  scanf("%d", &activities);
+  printf("You should wear:\n");
+  if(activities==1) {printf("Comfortable clothes\n");}
+  if(activities==2) {printf("Casual clothes\n");}
+ }
+ 
+  if(weather==3) /*Rainy*/
+ {
+  printf("What activities do you want to do?\n");
+  printf("Sleep at home=1\n");
+  printf("Reading books=2\n");
+  scanf("%d", &activities);
+  printf("You should wear:\n");
+  if(activities==1) {printf("Pijama \n");}
+  if(activities==2) {printf("Casual clothes\n");}
+ }
+ 
+  if(weather==4) /*Snowy*/
+ {
+  printf("What activities do you want to do?\n");
+  printf("Build a snowman=1\n");
+  printf("Go skiing=2\n");
+  scanf("%d", &activities);
+  printf("You should wear:\n");
+  if(activities==1) {printf("Warm clothes\n");}
+  if(activities==2) {printf("Warm clothes, skiing boots\n");}
+ }
+ 
+return 0;
+
+}
